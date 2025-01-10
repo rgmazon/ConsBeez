@@ -1,0 +1,343 @@
+.hero {
+    background-image: url('../img/services-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white !important;
+    z-index: 1;
+    
+}
+
+.hero p {
+    color: white !important;
+    }
+
+.btn-get-started {
+    background-color: var(--primary-orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn-get-started:hover {
+    background-color: var(--primary-orange-hover);
+    color: white;
+}
+.btn-get-started:active {
+    background-color: var(--btn-yellow) !important;
+    color: white !important;
+}
+
+.mini-title {
+    color: var(--btn-yellow);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 767.98px) {
+    .hero {
+        padding: none;
+        padding-top: 130px;
+    }
+}
+
+
+
+
+/* SS Section */
+/* CTA Section */
+.ss-section {
+    position: relative;
+    z-index: 1; /* Ensure it stacks above the beehive background */
+    background-color: transparent; /* To show the animation */
+}
+.cta-title {
+    color: var(--primary-orange);
+}
+.odometers {
+    position: relative;
+    z-index: 1; /* Ensure it stacks above the beehive background */
+    background-color: transparent; /* To show the animation */
+}
+
+.service-card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.service-card h2 {
+    color: #FF4500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-card li::before {
+    content: "✔"; /* Unicode character for the checkmark */
+      font-family: "Segoe UI Emoji", "Arial", sans-serif; /* Use an emoji-friendly font */
+      margin-right: 10px; /* Add space between the checkmark and the text */
+      color: green;
+}
+
+.service-card h2 {
+    text-align: start;
+    font-weight: bold;
+}
+
+.service-card p {
+    text-align: start;
+}
+
+.service-card li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    text-align: start;
+    color: var(--text-color);
+}
+
+.service-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #FF4500;
+}
+
+.customer-service {
+    background: rgba(255, 167, 38, 0.1);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+.outbound-calls {
+    background: rgba(251, 249, 118, 0.3);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+.business-process {
+    background: rgba(226, 249, 168, 0.3);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+/* Stats Section */
+.stats-section {
+    padding: 2rem 0;
+    /* min-height: 50vh; */
+
+    position: relative;
+    z-index: 1; /* Ensure it stacks above the beehive background */
+    background-color: transparent; /* To show the animation */
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.stat-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.stat-number {
+    font-family: 'PPMori-Regular', sans-serif !important;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-orange);
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1rem;
+}
+
+.icon-orange {
+    color: #FF6B00;
+}
+
+.icon-yellow {
+    color: #FFB800;
+}
+
+@media (max-width: 767px) {
+    .stat-item {
+        margin-bottom: 1rem;
+    }
+    .stat-icon svg {
+        width: 3rem;
+        height: auto;
+    }
+    .stat-number {
+        font-family: 'PPMori-Regular', sans-serif !important;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: var(--primary-orange);
+    }
+    .stat-label {
+        color: #666;
+        font-size: 1rem;
+    }
+}
+
+.lower-title {
+    color: var(--text-color);
+}
+.lower-title highlight {
+    font-family: 'PP Pangaia Bold' !important;
+    color: var(--primary-orange);
+}
+
+
+
+
+/* FAQs */
+.faq {
+    color: var(--primary-orange);
+}
+
+:root {
+    --primary-color: #FF4500;
+    --bg-accordion: rgba(255, 167, 38, 0.1);
+}
+
+.faq-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* .accordion-button {
+    background-color: var(--bg-yellow) !important;
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    font-size: 1.2rem;
+    box-shadow: none !important;
+    padding: 1.5rem;
+} */
+
+.accordion-button {
+    background-color: var(--bg-accordion) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    font-size: 1.2rem;
+    box-shadow: none !important;
+    padding: 1.5rem;
+    border-radius: 10px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg-accordion) !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.accordion-item {
+    background-color: var(--bg-accordion) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.accordion-body p {
+    margin-top: 1rem;
+}
+
+.text-muted strong {
+    color: var(--primary-orange) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FF4500' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FF4500' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E") !important;
+}
+
+.accordion-body {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 2rem;
+    }
+    
+    .accordion-button {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+.scroll-animate {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

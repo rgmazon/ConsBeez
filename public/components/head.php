@@ -4,6 +4,16 @@
 <title>ConsBeez - Virtual Assistant Services</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="public/css/styles.css">
+<link rel="stylesheet" href="public/css/navbar.css">
+<link rel="stylesheet" href="public/css/hero.css">
+<link rel="stylesheet" href="public/css/services.css">
+<link rel="stylesheet" href="public/css/ourstory.css">
+<link rel="stylesheet" href="public/css/whychooseus.css">
+<link rel="stylesheet" href="public/css/joinus.css">
+<link rel="stylesheet" href="public/css/testimonials.css">
+<link rel="stylesheet" href="public/css/footer.css">
+
+<link rel="stylesheet" href="public/css/services-hero.css">
 
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

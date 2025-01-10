@@ -15,14 +15,15 @@
                     <h2 class="display-4 fw-bold mb-4">Outsource Your Virtual Assistant & Back Office to Increase Your Productivity</h2>
                     <p class="lead mb-4">Unlock the potential of our Philippine-based call center with expert solutions in customer engagement, virtual assistance, and strategic outreach—driving your business to success.</p>
                     <div class="d-flex gap-3">
-                        <button class="btn btn-lg btn-yellow">Get Started</button>
-                        <button class="btn btn-lg btn-orange">Explore Solutions</button>
+                        <a href="contact.php" class="btn btn-lg btn-yellow">Get Started</a>
+                        <a href="services.php" class="btn btn-lg btn-orange">Explore Solutions</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section class="services py-5">
         <div class="container">
             <span class="mini-title mb-2 d-block">Services</span>
@@ -80,7 +81,7 @@
 
     <!-- Why Choose Us Section -->
     <section class="why-choose-us py-5">
-        <div class="container">
+        <div class="container mt-5">
         <span class="mini-title mb-2 d-block">Reliability</span>
             <div class="row mb-5">
                 <div class="col-lg-6">
@@ -88,13 +89,13 @@
                     <h2 class="display-5 fw-bold" style="color: #FFB800;">ConsBeez</h2> 
                     <h2 class="display-5 fw-bold" style="color: #FF4500;">for your Business Needs?</h2> -->
 
-                    <h2 class="fw-bold">Why Choose</h2> 
-                    <h2 class="fw-bold">ConsBeez</h2> 
-                    <h2 class="fw-bold">for Your Business Needs?</h2>
+                    <h2 class="fw-bold why-choose-us-text display-5">Why Choose</h2> 
+                    <h2 class="fw-bold why-choose-us-text-name display-5">ConsBeez</h2> 
+                    <h2 class="fw-bold why-choose-us-text display-5">for Your Business Needs?</h2>
                 </div>
                 <div class="col-lg-6">
                     <p class="lead text-muted">At ConsBeez, our live thrives on collaboration and dedication. We prioritize efficiency and reliability in every interaction, ensuring your business is always buzzing with success. Trust our team to deliver exceptional service tailored to your unique needs.</p>
-                    <button class="btn btn-lg btn-choose">Start Here</button>
+                    <a href="contact.php" class="btn btn-lg btn-choose">Start Here</a>
                 </div>
             </div>
         </div>
@@ -102,46 +103,198 @@
 
     <!-- Testimonials Section -->
     <section class="testimonial-section">
-        <?php include 'public/components/beehive.php'; ?>
+        <?php //include 'public/components/beehive.php'; ?>
+        <?php include 'public/components/hexagon.php'; ?>
         <div class="container">
-            <h2 class="text-center mb-5">What Our Clients Say</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="testimonial-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="australia-flag.png" alt="Australia Flag" class="me-2" style="width: 30px;">
-                            <h5 class="mb-0">rollickc69</h5>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-5">
+                    <div class="testimonial-content">
+                        <span class="mini-title mb-3 d-block">Testimonials</span>
+                        <h2 class="fw-bold mb-4 display-5">
+                            What Our Clients <span class="highlight highlight-main">Say.</span>
+                        </h2>
+                        <p class="mb-4 lead text-muted">
+                            At ConsBeez, we pride ourselves on delivering exceptional service and 
+                            tailored solutions that make a real difference for our clients. Here's what 
+                            some of our clients have to say about their experiences working with us, 
+                            highlighting the impact we've made in their businesses and projects.
+                        </p>
+                        <div class="nav-buttons">
+                            <button class="nav-button prev-btn" aria-label="Previous testimonial">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18L9 12L15 6" stroke="#000" stroke-width="2"/>
+                                </svg>
+                            </button>
+                            <button class="nav-button next-btn" aria-label="Next testimonial">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18L15 12L9 6" stroke="#000" stroke-width="2"/>
+                                </svg>
+                            </button>
                         </div>
-                        <p class="mb-0">"Exceeded my expectations and will be working with them again soon. ROI has been terrific for me."</p>
-                        <div class="text-warning">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-track">
+
+                        <!-- andylittle's testimonial -->
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "<span class="highlight">Easy to work</span> and delivered as promised. 
+                                I had an issue after the initial results, and we were able to work out a quick resolution.
+                                <span class="highlight">Helpful</span> and will use again!"
+                            </p>
+                            <div class="user-info">
+                                <img src="public/img/flags/vietnam-flag.png" alt="Vietnam Flag" class="flag-icon">
+                                <div>
+                                    <h5 class="mb-1">andylittle</h5>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- konradfernandex's testimonial -->
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "<span class="highlight">Good experience</span> working with him and his team! 
+                                They showed the <span class="highlight">flexibility</span> needed to configure the services I needed for calling prospects 
+                                in India."
+                            </p>
+                            <div class="user-info">
+                                <img src="public/img/flags/india-flag.png" alt="Indian Flag" class="flag-icon">
+                                <div>
+                                    <h5 class="mb-1">konradfernandex</h5>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- pat1962's testimonial -->
+                        <div class="testimonial-card">
+                            <p class="pat1962">
+                            "The call center team and leadership have been 
+                            <span class="highlight">fantastic</span> 
+                            from start to finish. Mildred connected me with skilled agents who were 
+                            <span class="highlight">eager</span> to learn, <span class="highlight">grow</span>, and 
+                            <span class="highlight">handle</span> tasks efficiently. 
+                            Their values of honesty, dedication, and flexibility have truly shone through."
+                            </p>
+                            <div class="user-info">
+                                <img src="public/img/flags/usa-flag.png" alt="usa Flag" class="flag-icon">
+                                <div>
+                                    <h5 class="mb-1">pat1962</h5>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "<span class="highlight">Exceeded</span> my expectations and will be working with them 
+                                <span class="highlight">again</span> soon. ROI has been 
+                                <span class="highlight">terrific</span> for me."
+                            </p>
+                            <div class="user-info">
+                                <img src="public/img/flags/uk-flag.png" alt="Australia Flag" class="flag-icon">
+                                <div>
+                                    <h5 class="mb-1">rollickc69</h5>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "<span class="highlight">Outstanding</span> service and results. Highly recommended for anyone looking to grow their business."
+                            </p>
+                            <div class="user-info">
+                                <img src="public/img/flags/usa-flag.png" alt="USA Flag" class="flag-icon">
+                                <div>
+                                    <h5 class="mb-1">businessPro</h5>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">
+                                "<span class="highlight">Professional</span> team that delivers on their promises. Will definitely work with them again."
+                            </p>
+                            <div class="user-info">
+                                <img src="public/img/flags/uk-flag.png" alt="UK Flag" class="flag-icon">
+                                <div>
+                                    <h5 class="mb-1">growthMaster</h5>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Testimonials Section Script -->
+    <script>
+        const track = document.querySelector('.testimonial-track');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        let currentIndex = 0;
 
+        function updateSlider(direction) {
+            currentIndex = direction === 'next' 
+                ? (currentIndex + 1) % testimonials.length 
+                : (currentIndex - 1 + testimonials.length) % testimonials.length;
+            
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Auto scroll
+        let autoScrollInterval = setInterval(() => updateSlider('next'), 5000);
+
+        // Manual navigation
+        prevBtn.addEventListener('click', () => {
+            clearInterval(autoScrollInterval);
+            updateSlider('prev');
+            autoScrollInterval = setInterval(() => updateSlider('next'), 5000);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            clearInterval(autoScrollInterval);
+            updateSlider('next');
+            autoScrollInterval = setInterval(() => updateSlider('next'), 5000);
+        });
+    </script>
+        
     <!-- Call to Action Section -->
     <section class="cta-section py-5 text-center">
         <div class="container">
-            <h2 class="mb-4">Empower Your Business Now!</h2>
-            <p class="mb-4">Unlock tailored digital solutions that drive success. Let's get started on transforming your business now!</p>
-            <div class="d-flex justify-content-center gap-3">
-                <button class="btn btn-primary">Learn More</button>
-                <button class="btn btn-secondary">Explore</button>
+            <h2 class="fw-bold mb-4 display-5 cta-title">Empower Your Business Now!</h2>
+            <p class="mb-4 lead text-muted">Unlock tailored digital solutions that drive success. Let's get started on transforming your business now!</p>
+            <div class="d-flex justify-content-center gap-3 cta-button-container">
+                <!-- <button class="btn btn-primary btn-lg">Learn More</button> -->
+                <a href="contact.php" class="btn btn-lg btn-primary">Learn More</a>
+                <a href="services.php" class="btn btn-lg btn-second">Explore →</a>
+                <!-- <button class="btn btn-second btn-lg">Explore →</button> -->
             </div>
         </div>
     </section>
 
     <?php include 'public/components/footer.php'; ?>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="js/beehive.js"></script> -->
 
-    <script>
-        document.querySelector('.navbar-toggler').addEventListener('click', function () {
-            this.classList.toggle('collapsed');
-        });
+    
 
-    </script>
+
+
+<script src="public/js/scroll.js"></script>
+
+
+
+    
     
 </body>

@@ -1,0 +1,35 @@
+/* Why Choose Us */
+.why-choose-us {
+    background-image: url('../img/g133.png');
+    background-size: cover;
+    background-position: center;
+    /* padding: 100px 0; */
+    z-index: 1;
+}
+.why-choose-us .mini-title {
+    color: #FFA726;
+    font-weight: bold;
+}
+.why-choose-us-text {
+    color: var(--text-color);
+    display: inline-block;
+}
+.why-choose-us-text-name {
+    color: var(--secondary-orange);
+    font-family: 'PP Pangaia Bold';
+    display: inline-block;
+}
+.btn-choose {
+    background-color: var(--primary-orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn-choose:hover {
+    background-color: var(--primary-orange-hover);
+    color: white;
+}
+.btn-choose:active {
+    background-color: var(--secondary-orange) !important;
+    color: white !important;
+}

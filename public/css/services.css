@@ -1,0 +1,52 @@
+/* Services */
+.services {
+    background-color: #fffbf3;
+}
+.services .mini-title {
+    color: #FFA726;
+    font-weight: bold;
+}
+.services-card {
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.services-card:hover {
+    transform: translateY(-10px);
+}
+.btn-services-main {
+    background-color: var(--primary-orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn-services-main:hover {
+    background-color: var(--primary-orange-hover);
+    color: white;
+}
+.btn-services-main:active {
+    background-color: var(--btn-yellow-hover) !important;
+    color: white !important;
+}
+.btn-services-secondary {
+    color: var(--primary-orange);
+    border: none;
+    border-radius: 5px;
+}
+.btn-services-secondary:hover {
+    background-color: var(--btn-yellow);
+    color: white;
+    border: var(--btn-yellow);
+    border-radius: 5px;
+}
+.btn-services-secondary:active {
+    background-color: var(--primary-orange) !important;
+    color: white !important;
+}
+.col-services {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services-buttons {
+    margin-left: 20px;
+}

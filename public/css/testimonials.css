@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'PPMori-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PPMori-Regular'), url('/public/fonts/PPMori-Regular.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'PP Pangaia Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PP Pangaia Bold'), url('/public/fonts/PPPangaia-Bold.woff') format('woff');
+    }
+:root {
+    --orange-color: #FF5C00;
+    --bg-testimonial: #FFF9F0;
+}
+
+.testimonial-section {
+    padding: 4rem 0;
+}
+
+.testimonial-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-title {
+    color: #FF8A00;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.testimonial-content h2 {
+    color: var(--text-color);
+    font-family: 'PPMori-Regular';
+}
+.highlight {
+    color: var(--orange-color);
+    font-family: 'PP Pangaia Bold' !important;
+}
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.testimonial-card {
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    background: rgba( 248, 216, 143, 0.25 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+}
+
+.testimonial-text {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+
+.pat1962 {
+    font-size: 1.5rem;
+    font-family: 'PPMori-Regular';
+}
+.pat1962 .highlight {
+    font-size: 30px;
+    font-family: 'PP Pangaia Bold';
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.nav-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: #E5E5E5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background: #D5D5D5;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flag-icon {
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%; */
+}
+
+.stars {
+    color: #FFD700;
+}
+
+
+@media (max-width: 767.98px) {
+    .testimonial-card {
+        border-radius: 16px;
+        padding: 2.5rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    
+        background: rgba( 248, 216, 143, 0.25 );
+        backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border-radius: 10px;
+    }
+
+    .user-info h5 {
+        color: red;
+    }
+    .testimonial-text {
+        font-size: 1.5rem;
+        font-family: 'PPMori-Regular';
+    }
+    .pat1962 {
+        font-size: 1rem;
+        font-family: 'PPMori-Regular';
+    }
+    .pat1962 .highlight {
+        font-size: 15px;
+        font-family: 'PP Pangaia Bold';
+        font-weight: bold;
+    }
+    .highlight {
+        font-size: 25px;
+        font-family: 'PP Pangaia Bold';
+        font-weight: bold;
+    }
+    .highlight-main {
+        font-size: 40px;
+    }
+}
